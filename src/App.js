@@ -1,12 +1,16 @@
-
-import './App.css';
-import Navbar from './components/Navbar';
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/HeaderSection/Header";
+import { ThemeProvider } from "./useContextHook/useTheme";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
-    </div>
+    <ThemeProvider>
+      <BrowserRouter>
+        <div className="">
+          <Header />
+        </div>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
