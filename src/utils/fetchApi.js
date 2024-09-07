@@ -1,6 +1,6 @@
 import axios from "axios";
 const BASE_URL = "https://www.googleapis.com/youtube/v3";
-const API_KEY = "AIzaSyDybxPn9xC3ZvhwO9pzZ4T6NJhRFHiVjso";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const fetchApiForYoutubeData = async (enpoints, params = {}) => {
   try {
